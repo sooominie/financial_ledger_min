@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목표 설정하기</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>목표 설정하기</h1>
+    <form action="/submit" method="post">
+        <label for="months">기간 (달):</label>
+        <input type="number" name="months" id="months" required min="1" placeholder="예: 3" /><br/>
+        
+        <label for="goal">목표:</label>
+        <input type="text" name="goal" id="goal" required placeholder="예: 제주도 여행" /><br/>
+        
+        <button type="submit">함께하기</button>
+    </form>
+    <h2>목표 및 계획</h2>
+    <ul id="goal-list">
+        <!-- 서버에서 전달된 목표와 계획을 여기 추가 -->
+    </ul>
+    <script src="/js/script.js"></script>
+</body>
+</html>
